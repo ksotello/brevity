@@ -1,0 +1,17 @@
+.: Changelog
+
+20130219
+	-Brevity added to GitHub
+
+20130120
+	-modified action.lib.php by removing some checks in the constructor. It should now work mor efficiently.
+	-removed extraneous files in the libraries folder.
+
+20121230
+	-action.lib.php recieved an update that removes all non-alphanumeric characters from the string preventing directory traversal and all sorts of nasty tricks.
+	-Changed sample.page.php to home.page.php
+	-home.page.php now displays all GET variables and their corresponding keys
+	-Updated brevity.readme
+
+20121223
+	-Added brevity.changelog, brevity.todo, and brevity.readme
