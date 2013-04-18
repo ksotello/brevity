@@ -14,10 +14,10 @@ abstract class Page
   {
     $this->brevCfg = $brevCfg;
     $this->pageTheme = $theme;
-    if ($css and is_array($scripts))
+    if ($css and is_array($scripts->getScripts()))
     {
       $this->pageCSS = $css;
-      $this->pageScripts = $scripts;
+      $this->pageScripts = $scripts->getScripts();
     }
 	else
 	{
