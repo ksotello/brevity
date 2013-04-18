@@ -28,23 +28,23 @@ abstract class Page
     return ($this->pageScripts);
   }
 
-  private function makeCSS($css)
+  private function makeCSS() // place $css in parameters
   {
     $rVal = '';
     $tmpPath = $this->brevCfg['theme_path'].$this->pageTheme.'/';
-    foreach ($css as $value => $val)
+    foreach ($pageCSS as $value)
     {
-      $rVal .= '<link rel="stylesheet" href="'.$tmpPath.$val.'" type="text/css">'."\n";
+      $rVal .= '<link rel="stylesheet" href="'.$tmpPath.$value.'" type="text/css">'."\n";
     }
     return ($rVal);
   }
 
-  private function makeScripts($scripts)
+  private function makeScripts() // place $scripts in parameters
   {
     $rVal = '';
-    foreach ($scripts as $value => $val)
+    foreach ($jScripts as $value)
     {
-      $rVal .= '<script type="text/javascript" src="'.$this->brevCfg['script_path'].$val.'"></script>'."\n";
+      $rVal .= '<script type="text/javascript" src="'.$this->brevCfg['script_path'].$value.'"></script>'."\n";
     }
     return ($rVal);
   }

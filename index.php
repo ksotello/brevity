@@ -10,16 +10,16 @@
 <?PHP $boilerplate = new Boilerplate(false); ?> 
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+   <?PHP echo '<meta content="text/html;charset=utf-8" http-equiv="Content-Type">'; ?>
     <?PHP
       foreach ($brevCfg['meta_tags'] as $key => $value)
       {
         echo '    <meta name="'.$key.'" content="'.$value.'">'."\n";
       }
     ?>
-    <?PHP echo $aOne->cClass->getScripts(); ?>
+    <?PHP echo $aOne->cClass->makeScripts(); // was getScripts() ?>
     <title><?PHP echo $aOne->cClass->getTitle(); ?></title>
-    <?PHP echo $aOne->cClass->getCSS(); ?>
+    <?PHP echo $aOne->cClass->makeCSS();  //was getCSS() ?> 
   </head>
   <body>
     <?PHP

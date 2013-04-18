@@ -5,7 +5,7 @@
   {
     function __construct($brevCfg, $uGet)
     {
-      parent::__construct($brevCfg, "original", 'main.css', array());//array(), array());
+      parent::__construct($brevCfg, "original");
       
       $this->uGet = $uGet;
     }

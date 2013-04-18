@@ -14,13 +14,10 @@
     
     public function Display()
     {
-	  echo '<p>here ya go</p>';
-	  echo '<h1>here is something new</h1>';
-	  echo '
-	       <script>
-		$("h1").hide();
-	       </script>
-	       ';
+	  echo '<p>here ya go</p>
+	        <script>
+			$("p").hide();
+		</script>';
     }
 
     public function getTitle()
