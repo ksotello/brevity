@@ -7,7 +7,7 @@
   $aOne = new Action("home", $_GET, $brevCfg);
 ?>
 <!DOCTYPE html>
-<?PHP &boilerplate = new Boilerplate(true); ?> 
+<?PHP $boilerplate = new Boilerplate(false); ?> 
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
@@ -25,6 +25,6 @@
     <?PHP
       $aOne->Act();
     ?>
-    <?PHP $analytics = new Analytics(true); ?>
+    <?PHP $analytics = new Analytics(false); ?>
   </body>
 </html>

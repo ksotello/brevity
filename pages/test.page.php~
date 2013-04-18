@@ -1,11 +1,11 @@
-<?PHP
+a<?PHP
   require_once('page.class.php');
   
   class Test extends Page
   {
     function __construct($brevCfg, $uGet)
     {
-      parent::__construct($brevCfg, "original");
+      parent::__construct($brevCfg, "original", array(), array());
       
       $this->uGet = $uGet;
     }
