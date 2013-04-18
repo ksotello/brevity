@@ -14,9 +14,9 @@ abstract class Page
   {
     $this->brevCfg = $brevCfg;
     $this->pageTheme = $theme;
-    if ($css and is_array($scripts->getScripts()))
+    if (is_array($css->getThemes()) and is_array($scripts->getScripts()))
     {
-      $this->pageCSS = $css;
+      $this->pageCSS = $css->getThemes();
       $this->pageScripts = $scripts->getScripts();
     }
 	else
@@ -28,7 +28,6 @@ abstract class Page
   public function getCSS()
   {
     $rVal = '';
-	/*
     if (is_array($this->pageCSS))
     {
 	  
@@ -45,8 +44,8 @@ abstract class Page
 	{
 		$rVal .= 'No Style Guide Found!';
 	}
-	*/
 	
+	/*
 	if ($this->pageCSS != null)
 	{
 		$tmpPath = $this->brevCfg['theme_path'].$this->pageTheme.'/';
@@ -57,7 +56,7 @@ abstract class Page
 	{
 		print 'Style Guide has not been loaded';
 	}
-	
+	*/
     return ($rVal);
   }
 

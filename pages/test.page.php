@@ -1,12 +1,13 @@
 <?PHP
   require_once('page.class.php');
-  include('scripts.php');  
+  include('scripts.php');
+  include('themes.php');
   
   class Test extends Page
   {
     function __construct($brevCfg, $uGet)
     {
-      parent::__construct($brevCfg, "original", 'main.css', new Scripts());//array(), array());
+      parent::__construct($brevCfg, "original", new Themes(), new Scripts());//array(), array());
       
       $this->uGet = $uGet;
     }
