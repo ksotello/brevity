@@ -14,6 +14,7 @@
     
     public function Display()
     {
+      echo '<h1>Welcome to the homestead</h1>';
       foreach ($this->uGet as $key => $val)
       {
         echo '<b>'.$val.'</b> = '.$key.'</br>';

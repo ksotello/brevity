@@ -1,4 +1,4 @@
-<?PHP
+a<?PHP
   require_once('page.class.php');
   include('scripts.php');
   include('themes.php');
@@ -16,11 +16,12 @@
     
     public function Display()
     {
-	  echo '<p>jQuery test --> you should not be able to see this<p>';
-	  echo '<script>
-				$("p").hide();
-			</script>
-		   ';
+	  echo '<h1>here is something new</h1>';
+	  echo '
+	       <script>
+		$("h1").hide();
+	       </script>
+	       ';
     }
 
     public function getTitle()
