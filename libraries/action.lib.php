@@ -3,22 +3,24 @@ class Action
 {
   public $actionDefault;
   public $cClass;
+  public $action;
 
   function __construct($tDefault, $uGet, $brevCfg)
   {
     $this->actionDefault = $tDefault;
-    $action = preg_replace('/[^0-9a-z]/', '', strtolower($uGet['action']));
-    
-    if(!file_exists($brevCfg['page_path'].$action.$brevCfg['page_ext']))
+	$this->action = preg_replace('/[^0-9a-z]/', '', strtolower($uGet['action']));
+
+  
+	if(!file_exists($brevCfg['page_path'].$this->action.$brevCfg['page_ext']))
     {
-      $action = $this->actionDefault;
+      $this->action = $this->actionDefault;
     }
 
-    require_once($brevCfg['page_path'].$action.$brevCfg['page_ext']);
+    require_once($brevCfg['page_path'].$this->action.$brevCfg['page_ext']);
 
-    if(class_exists(ucfirst($action)))
+    if(class_exists(ucfirst($this->action)))
     {
-      $t = ucfirst($action);
+      $t = ucfirst($this->action);
       $this->cClass = new $t($brevCfg, $uGet);
     }
   }

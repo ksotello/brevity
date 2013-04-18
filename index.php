@@ -16,7 +16,7 @@
     ?>
     <?PHP echo $aOne->cClass->getScripts(); ?>
     <title><?PHP echo $aOne->cClass->getTitle(); ?></title>
-    <?PHP echo $aOne->cClass->getCSS(); ?>
+    <?PHP echo $aOne->cClass->getCSS();//print $aOne->cClass->getCSS(); ?>
   </head>
   <body>
     <?PHP

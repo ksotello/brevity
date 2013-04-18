@@ -1,0 +1,9 @@
+/*
+	Default style guide for use with all pages. If you wish to make changes
+	to this default style sheet you may do so. Also you may add aditional
+	themes inside the "themes" folder to make use of.
+*/
+
+h1{
+	color:Red;
+}

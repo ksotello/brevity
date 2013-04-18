@@ -1,7 +1,7 @@
 <?PHP
   require_once('page.class.php');
 
-  class Home extends Page
+  class Test extends Page
   {
     function __construct($brevCfg, $uGet)
     {
@@ -14,10 +14,11 @@
     
     public function Display()
     {
-      foreach ($this->uGet as $key => $val)
-      {
-        echo '<b>'.$val.'</b> = '.$key.'</br>';
-      }
+	  echo '<p>jQuery test --> you should not be able to see this<p>';
+	  echo '<script>
+				$("p").hide();
+			</script>
+		   ';
     }
 
     public function getTitle()
