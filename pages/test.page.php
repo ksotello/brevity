@@ -1,11 +1,11 @@
 <?PHP
   require_once('page.class.php');
-  
+
   class Test extends Page
   {
     function __construct($brevCfg, $uGet)
     {
-      parent::__construct($brevCfg, "original");
+      parent::__construct($brevCfg, "original", array(), array());
       
       $this->uGet = $uGet;
     }
@@ -14,10 +14,10 @@
     
     public function Display()
     {
-	  echo '<p>here ya go</p>
-	        <script>
-			$("p").hide();
-		</script>';
+      foreach ($this->uGet as $key => $val)
+      {
+        echo '<b>'.$val.'</b> = '.$key.'</br>';
+      }
     }
 
     public function getTitle()

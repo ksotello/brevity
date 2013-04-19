@@ -18,10 +18,6 @@ class Analytics
     </script>
 			     ';
 		}
-		else
-		{
-			echo '';
-		}
 	}
 }
 ?>

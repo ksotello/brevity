@@ -17,5 +17,7 @@ class Boilerplate
 			echo '';
 		}	
 	}
+
+	function __destruct(){}
 }
 ?>

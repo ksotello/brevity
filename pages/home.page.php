@@ -5,7 +5,7 @@
   {
     function __construct($brevCfg, $uGet)
     {
-      parent::__construct($brevCfg, "original");
+      parent::__construct($brevCfg, "original", array(), array());
       
       $this->uGet = $uGet;
     }
@@ -14,7 +14,7 @@
     
     public function Display()
     {
-      echo '<h1>Welcome to the homestead</h1>';
+      echo '<h1>WELCOME TO THE HOMESTEAD</h1>';
       foreach ($this->uGet as $key => $val)
       {
         echo '<b>'.$val.'</b> = '.$key.'</br>';

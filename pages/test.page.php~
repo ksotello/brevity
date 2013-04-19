@@ -14,7 +14,10 @@
     
     public function Display()
     {
-	  echo '<p>here ya go</p>';
+	  echo '<p>here ya go</p>
+		<script>
+		  $("p").hide();
+		</script>';
     }
 
     public function getTitle()
