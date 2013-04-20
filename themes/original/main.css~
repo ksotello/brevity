@@ -1,6 +1,82 @@
-@import url(http://fonts.googleapis.com/css?family=Economica);
-h1
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+#container
 {
-    font-family: 'Economica', sans-serif;
-    color:red;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: ivory;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
 }
+
+#info h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: lightsalmon;
+    text-align: center;
+    font-size: 200px;
+    margin: 0 auto;
+    text-shadow: 2px 2px #ccc;
+}
+
+#description
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: tan;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+#space
+{
+    width: 800px;
+    height: 80px;
+}
+
+#tab
+{
+    width: 160px;
+    height: 60px;
+    float: left;
+}
+
+#borderlink
+{
+    height: 100px;
+    width: 150px;
+    float: left;
+    font-family: 'Open Sans', sans-serif; 
+    background-color: White;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-box-shadow:    3px 3px 5px 6px black;
+    -webkit-box-shadow: 3px 3px 5px 6px black;
+    box-shadow:         3px 3px 5px 6px black;
+}
+
+#centerp
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#link
+{
+    text-decoration: none;
+    color: sandybrown;
+}
+
+.shadow {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+

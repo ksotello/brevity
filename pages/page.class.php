@@ -18,10 +18,16 @@ abstract class Page
     $this->pageTheme = $theme;
     $this->css = $css;
     $this->scripts = $scripts;
-    array_push($this->css, $brevCfg['default_css']);
-    array_push($this->scripts, $brevCfg['jquery']);
-    $this->pageCSS = (is_array($this->css) ? $this->makeCSS($this->css) : 'no css found <br>');
-    $this->pageScripts = (is_array($this->scripts) ? $this->makeScripts($this->scripts) : 'no scripts found <br>');
+
+    // adding new css style sheets reguires you to add your css path to
+    // the pre-exsting array_push like the example given. You may do the
+    // the same for you javascripts.
+
+    // array_push($this->css, $brevCfg['default_css'], $brevCfg['normalize'], $brevCfg['gallery']);
+    // array_push($this->scripts, $brevCfg['jquery']);
+
+    $this->pageCSS = (is_array($this->css) ? $this->makeCSS($this->css) : '');
+    $this->pageScripts = (is_array($this->scripts) ? $this->makeScripts($this->scripts) : '');
   }
 
   public function getCSS()

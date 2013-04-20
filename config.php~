@@ -16,6 +16,8 @@ $brevCfg['meta_tags']['description'] = '';
 $brevCfg['meta_tags']['robots'] = 'none';
 
 $brevCfg['default_css'] = 'main.css';
+$brevCfg['normalize'] = 'normalize.css';
+$brevCfg['gallery'] = 'gallery.css';
 
 $brevCfg['jquery'] = 'jquery-1.9.1.min.js';
 ?>

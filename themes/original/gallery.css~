@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+
+
+#background
+{
+    background-image: url('/images/g-background.png');
+    height: 1200px;
+    width:1200px;
+}
+
+#gallery-container
+{
+    height: 100px;
+    width:  1200px;
+    position: fixed;
+    background-color: white;
+}
+
+#top
+{
+    margin: 0 auto;
+}
+
+#home
+{
+    font-family: 'Maven Pro', sans-serif;
+    float: left;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 70px;
+    font-weight: 300;
+    text-shadow: 2px 2px #ccc;
+}
+
+#homepage
+{
+    padding-top:100px;
+}
+
+#art
+{
+    font-family: 'Maven Pro', sans-serif;
+    float: left;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 70px;
+    font-weight: 300;
+    text-shadow: 2px 2px #ccc;
+}
+
+#blog
+{
+    font-family: 'Maven Pro', sans-serif;
+    float: left;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 70px;
+    font-weight: 300;
+    text-shadow: 2px 2px #ccc;
+}
+
+#contact
+{
+    font-family: 'Maven Pro', sans-serif;
+    float: left;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 70px;
+    font-weight: 300;
+    text-shadow: 2px 2px #ccc;
+}
+
+#gallery-body
+{
+    margin: 0 auto;
+}
+
+#homepage-header
+{
+    font-family: 'Maven Pro', sans-serif;	
+} 

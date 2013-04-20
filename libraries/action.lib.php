@@ -31,5 +31,6 @@ class Action
   {
     $this->cClass->Display();
   }
+
 }
 ?>

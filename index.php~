@@ -14,17 +14,6 @@
         echo ' <meta name="'.$key.'" content="'.$value.'">'."\n";
       }
     ?>
-<?PHP
-	if($aOne->cClass->getCSS() == null)
-    	{
-       		echo 'no css style found <br>';
-    	}
-
-	if($aOne->cClass->getScripts() == null)
-    	{
-       		echo 'no scripts found <br>';
-    	}
-?>
 <?PHP echo $aOne->cClass->getScripts(); ?>
 <title><?PHP echo $aOne->cClass->getTitle(); ?></title>
 <?PHP echo $aOne->cClass->getCSS(); ?>

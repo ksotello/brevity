@@ -1,9 +1,12 @@
 <?PHP
 class Action 
 {
+  require_once($brevCfg['lib_path'].'linkto.lib.php');
+
   public $actionDefault;
   public $cClass;
   public $action;
+  public $link_to = new LinkTo();
 
   function __construct($tDefault, $uGet, $brevCfg)
   {
@@ -31,5 +34,6 @@ class Action
   {
     $this->cClass->Display();
   }
+
 }
 ?>

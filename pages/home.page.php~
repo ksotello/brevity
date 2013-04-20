@@ -14,16 +14,31 @@
     
     public function Display()
     {
-      echo '<h1>WELCOME TO THE HOMESTEAD</h1>';
+      //$link = $link_to->link('test', 'this is a test link');
+      echo '<div id="container" class="shadow">
+	      <div id="info">
+	        <h1>brevity</h1>
+	      </div>
+              <p id="description">A simple, clean, easy to use framework that allows for complete customization</p>
+              <div id="space"></div>
+              <div id="tab"></div>
+              <div id="borderlink">
+                <p id="centerp"><a href="https://github.com/silver0bullets/brevity" id="link">get brevity</a></p>
+              </div>
+              <div id="tab"></div>
+              <div id="borderlink">
+                <a href="https://github.com/silver0bullets/brevity/wiki" id="link">get brevity</a>
+              </div>
+	    </div>';
+  {
+     echo '<a href="index.php?action='.$link.'">'.$linkname.'</a>';
+  }
+      /*
       foreach ($this->uGet as $key => $val)
       {
         echo '<b>'.$val.'</b> = '.$key.'</br>';
       }
-      echo '
-             <script>
-		$("h1").hide();
-	     </script>
-	   ';
+      */
     }
 
     public function getTitle()
