@@ -1,5 +1,0 @@
-# brevity/routing.yml
-
-homepage:
-  url: /
-  param: { module: default, action: home }
