@@ -15,7 +15,8 @@
     public function Display()
     {
       //$link = $link_to->link('test', 'this is a test link');
-      echo '<div id="container" class="shadow">
+      echo '<div id="space-head"></div>
+	   <div id="container" class="shadow">
 	      <div id="info">
 	        <h1>brevity</h1>
 	      </div>
