@@ -27,7 +27,7 @@
               </div>
               <div id="tab"></div>
               <div id="borderlink">
-                <p id="centerp"><a href="https://github.com/silver0bullets/brevity/wiki" id="link">get brevity</a></p>
+                <p id="centerp"><a href="https://github.com/silver0bullets/brevity/wiki" id="link">view wiki</a></p>
               </div>
 	    </div>';
   {
