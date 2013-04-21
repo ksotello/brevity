@@ -23,7 +23,7 @@ abstract class Page
     // the pre-exsting array_push like the example given. You may do the
     // the same for you javascripts.
 
-    // array_push($this->css, $brevCfg['default_css'], $brevCfg['normalize'], $brevCfg['gallery']);
+    array_push($this->css, $brevCfg['default_css'], $brevCfg['normalize']);
     // array_push($this->scripts, $brevCfg['jquery']);
 
     $this->pageCSS = (is_array($this->css) ? $this->makeCSS($this->css) : '');

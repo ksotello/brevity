@@ -20,9 +20,8 @@ $brevCfg['meta_tags']['robots'] = 'none';
 // follow the examples shown here as well as
 // the examples given in page.class.php
 
-// $brevCfg['default_css'] = 'main.css';
-// $brevCfg['normalize'] = 'normalize.css';
-// $brevCfg['gallery'] = 'gallery.css';
+ $brevCfg['default_css'] = 'main.css';
+ $brevCfg['normalize'] = 'normalize.css';
 
 // To link your javascripts to brevity
 // follow the examples shown here as well as

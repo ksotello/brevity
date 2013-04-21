@@ -15,9 +15,17 @@ $brevCfg['meta_tags']['keywords'] = '';
 $brevCfg['meta_tags']['description'] = '';
 $brevCfg['meta_tags']['robots'] = 'none';
 
-$brevCfg['default_css'] = 'main.css';
-$brevCfg['normalize'] = 'normalize.css';
-$brevCfg['gallery'] = 'gallery.css';
 
-$brevCfg['jquery'] = 'jquery-1.9.1.min.js';
+// To link your css stylesheets to brevity
+// follow the examples shown here as well as
+// the examples given in page.class.php
+
+ $brevCfg['default_css'] = 'main.css';
+// $brevCfg['normalize'] = 'normalize.css';
+
+// To link your javascripts to brevity
+// follow the examples shown here as well as
+// the examples given in page.class.php
+
+// $brevCfg['jquery'] = 'jquery-1.9.1.min.js';
 ?>
