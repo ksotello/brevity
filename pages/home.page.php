@@ -14,7 +14,6 @@
     
     public function Display()
     {
-      //$link = $link_to->link('test', 'this is a test link');
       echo '<div id="space-head"></div>
 	   <div id="container" class="shadow">
 	      <div id="info">
@@ -31,15 +30,6 @@
                 <p id="centerp"><a href="https://github.com/silver0bullets/brevity/wiki" id="link">view wiki</a></p>
               </div>
 	    </div>';
-  {
-     echo '<a href="index.php?action='.$link.'">'.$linkname.'</a>';
-  }
-      /*
-      foreach ($this->uGet as $key => $val)
-      {
-        echo '<b>'.$val.'</b> = '.$key.'</br>';
-      }
-      */
     }
 
     public function getTitle()
